@@ -55,34 +55,6 @@ These insights empower stakeholders with key business metrics, enabling strategi
 
 ---
 
-## Repository Structure
-
-data-warehouse-project/
-│
-├── datasets/ # Raw datasets used for the project (ERP and CRM data)
-│
-├── docs/ # Project documentation and architecture details
-│ ├── etl.drawio # ETL techniques and pipeline visualization
-│ ├── data_architecture.drawio # Project architecture diagram
-│ ├── data_catalog.md # Dataset catalog with field descriptions
-│ ├── data_flow.drawio # Data flow diagram
-│ ├── data_models.drawio # Star schema data models
-│ ├── naming-conventions.md # Table, column, and file naming standards
-│
-├── scripts/ # SQL scripts for ETL and transformation logic
-│ ├── bronze/ # Scripts for extracting and loading raw data
-│ ├── silver/ # Scripts for data cleansing and transformation
-│ ├── gold/ # Scripts for building analytical models
-│
-├── tests/ # Test scripts and data validation checks
-│
-├── README.md # Project overview and instructions
-├── LICENSE # License information
-├── .gitignore # Git ignore file
-└── requirements.txt # Dependencies and tools (if any)
-
----
-
 ## License
 
 This project is licensed under the **MIT License**.  
