@@ -33,9 +33,9 @@ CREATE TABLE bronze.crm_prd_info (
   prd_end_date DATE,
 );
 
-IF OBJECT_ID ('bronze.crm_sales_info' , 'U') IS NOT NULL
-  DROP TABLE bronze.crm_sales_info;
-CREATE TABLE bronze.crm_sales_info (
+IF OBJECT_ID ('bronze.crm_sales_details' , 'U') IS NOT NULL
+  DROP TABLE bronze.crm_sales_details;
+CREATE TABLE bronze.crm_sales_details (
   sls_ord_num NVARCHAR(50),
   sls_prd_key NVARCHAR(50),
   sls_cust_id INT,
