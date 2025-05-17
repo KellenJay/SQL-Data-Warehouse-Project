@@ -139,3 +139,17 @@ SELECT DISTINCT cntry
 FROM silver.erp_loc_a101
 ORDER BY cntry
 
+=============================================================================================================================
+erp_loc_a101
+=============================================================================================================================
+
+-- Check for Unwanted Spaces
+-- Expectations: No Results
+SELECT * 
+FROM silver.erp_px_cat_g1v2
+WHERE cat != TRIM(cat) OR subcat != TRIM(subcat) OR maintenance != TRIM(maintenance)
+
+-- Data Standardization & Consistency
+-- Expectations: No Results
+SELECT DISTINCT subcat
+FROM silver.erp_px_cat_g1v2
