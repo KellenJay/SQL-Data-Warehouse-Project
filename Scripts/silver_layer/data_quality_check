@@ -94,5 +94,30 @@ OR sls_sales <= 0 OR sls_quantity <= 0 OR sls_price <= 0
 ORDER BY sls_sales, sls_quantity, sls_price
 
 =============================================================================================================================
-erp.
+erp_cust_az12
 =============================================================================================================================
+
+-- Check for Unmatching ID columns
+-- Expectation: No Result
+SELECT
+CASE WHEN cid LIKE 'NAS%' THEN SUBSTRING(cid, 4, LEN(cid))
+	 ELSE cid
+END cid,
+bdate,
+gen
+FROM silver.erp_cust_az12
+WHERE CASE WHEN cid LIKE 'NAS%' THEN SUBSTRING(cid, 4, LEN(cid))
+	 ELSE cid
+END NOT IN (SELECT DISTINCT cst_key FROM silver.crm_cust_info)
+
+-- Identify Out of Range Dates
+-- Expectation: No Result
+SELECT
+bdate
+FROM silver.erp_cust_az12
+WHERE bdate < '1924-01-01' OR bdate > GETDATE()
+
+-- Data Standardization and Consistency
+-- Expectation: No Result
+SELECT DISTINCT gen
+FROM silver.erp_cust_az12
