@@ -21,7 +21,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | `country`         | `NVARCHAR(50)` | Country of residence (e.g., 'Australia').                                |
 | `marital_status`  | `NVARCHAR(50)` | Marital status (e.g., 'Married', 'Single').                              |
 | `gender`          | `NVARCHAR(50)` | Gender (e.g., 'Male', 'Female', 'n/a').                                  |
-| `birthdate`       | `DATE`         | Date of birth (YYYY-MM-DD).                                              |
+| `birth_date`       | `DATE`         | Date of birth (YYYY-MM-DD).                                              |
 | `create_date`     | `DATE`         | Date the customer record was created in the system.                      |
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
