@@ -61,7 +61,7 @@ The Gold Layer is the business-level data representation, structured to support 
 | `product_key`   | `INT`          | Foreign key linking to `dim_products`.       |
 | `customer_key`  | `INT`          | Foreign key linking to `dim_customers`.      |
 | `order_date`    | `DATE`         | Date the order was placed.                   |
-| `shipping_date` | `DATE`         | Date the order was shipped to the customer.  |
+| `ship_date`     | `DATE`         | Date the order was shipped to the customer.  |
 | `due_date`      | `DATE`         | Payment due date for the order.              |
 | `sales_amount`  | `INT`          | Total monetary value of the line item.       |
 | `quantity`      | `INT`          | Number of units sold in the order line item. |
