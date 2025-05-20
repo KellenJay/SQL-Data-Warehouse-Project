@@ -1,4 +1,4 @@
-# Full-Stack Data Warehouse Project
+# Data Warehouse Project
 
 This portfolio project showcases how I built a complete data warehousing and analytics solution — from setting up the warehouse to uncovering actionable insights. It’s designed to reflect practical, real-world workflows while following industry best practices in data engineering and analytics.
 
