@@ -21,7 +21,6 @@ This project includes:
 - **Data Architecture**: Built a modern data warehouse using the Medallion Architecture with clearly defined Bronze, Silver, and Gold layers.
 - **ETL Pipelines**: Extracted, transformed, and loaded data from raw sources into structured layers.
 - **Data Modeling**: Designed fact and dimension tables to support efficient analytical querying.
-- **Analytics & Reporting**: Developed SQL-based reports and dashboards to turn raw data into actionable insights.
 
 ---
 
@@ -41,17 +40,17 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ---
 
-## BI: Analytics & Reporting
+## Furture Scope for BI: Analytics & Reporting
 
 ### Objective
 
-Develop SQL-based analytics to deliver detailed insights into:
+To develop SQL-based analytics to deliver detailed insights into:
 
 - Customer Behavior  
 - Product Performance  
 - Sales Trends  
 
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+These insights will empower stakeholders with key business metrics, enabling strategic decision-making.
 
 ---
 
